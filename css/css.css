@@ -1,0 +1,105 @@
+html, body
+{
+	background-color: #FFFAFA;
+	color: #000000;
+	min-height: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	-webkit-print-color-adjust: exact !important;
+	font-size: 12pt;
+}
+
+.eintrag {font-weight: bold;}
+
+.spruch
+{
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+div
+{
+	max-width: 800px;
+	column-width: 390px;
+	margin: auto;
+	text-align: justify;
+	hyphens: auto;
+	    -webkit-column-rule: 4px dotted #ff00ff; /* Chrome, Safari, Opera */
+	    -moz-column-rule: 4px dotted #ff00ff; /* Firefox */
+	    column-rule: 2px dotted #777777;
+}
+div.whole 
+{
+	column-width: 800px;
+	position: relative;
+}
+
+div.wholecenter {column-width: 800px; text-align: center; position: relative;}
+
+div.fullheight
+{
+	min-height: 100%;
+	position: relative;
+}
+
+hr
+{
+	max-width: 800px;
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.bottom
+{
+	column-width: 800px;
+	position: absolute;
+	bottom: 10px !important;
+}
+
+.r1ck {color: #A06;}
+
+.right {position: absolute; right: 0px; text-align: right;}
+
+.centertext {text-align: center;}
+
+.bigfont {font-size: 14pt;}
+
+.biggerfont {font-size: 18pt;}
+
+#crossoutwarning
+{
+	text-align: left;
+	position: absolute;
+	display: inline-block;
+	column-width: 460px;
+	width: 460px;
+	right: 0px;
+}
+
+span.px100left
+{
+	position: relative;
+	left: 100px;
+}
+
+.wahlzettel
+{
+	width: 90%;
+	border: 2px dashed #000000;
+	text-align: center;
+}
+
+.nobottomborder {border-bottom: 0;}
+
+@media print {
+	.noprint {display: none;}
+	.printblack {color: #000000;}
+	.r1ck {color: #000000;}
+	img {border: 0;}
+	a, a:hover, a:visited
+	{border: 0; color: #000000; text-decoration: none; font-style: italic;}
+	html, body {background-color: transparent;}
+}

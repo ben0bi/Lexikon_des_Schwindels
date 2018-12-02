@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Lexikon des Schwindels</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css" />
+
+	<style>
+		*
+		{
+			padding: 0;
+			margin: 0;
+		}
+		
+		#startlink
+		{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border: 2px solid #3333AA;
+			border-radius: 5px;
+		}
+		@media print {
+			#startlink
+			{
+				border: 0;
+			}
+		}
+
+	</style>
+</head>
+<body>
+<div class="whole noprint"><a href="hds.html" class="excludelink">Weiter zur Einleitung. --&gt;</a><br /></div>
+
+<a href="hds.html" id="startlink" class="excludelink"><img id="coverimage" src="cover.jpg"></a>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+function setSize()
+{
+	$('body').height($(window).height());
+	$('#coverimage').height($(window).height()-50);
+}
+
+  $(document).ready(function() {
+	setSize();
+    $(window).bind('resize', function() {
+		setSize();
+	});
+	console.log("Ready!");
+  });
+</script>
+
+</body>
+</html>
